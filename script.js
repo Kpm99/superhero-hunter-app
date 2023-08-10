@@ -25,7 +25,7 @@ addItem.addEventListener('keyup',(result = async ()=>{
   }
   list.innerHTML=""
 // Marvel Api url
-  const url=`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=32792b62c07060de73f51dfce4fb7cf9&hash=654929f48b823454d77fe0bf7ab12796&nameStartsWith=${addItem.value}`
+  const url=`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=32792b62c07060de73f51dfce4fb7cf9&hash=654929f48b823454d77fe0bf7ab12796&nameStartsWith=${addItem.value}`
    // API call to get the data 
       const result= await fetch(url);
       const Webdata = await result.json();
